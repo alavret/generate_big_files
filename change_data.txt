@@ -1,1 +1,3 @@
-curl -k -o hlragent.deb 'https://127.0.0.1/linux_agent/97877fd6-dad9-45dd-815e-a7e917d0280c/83023bec-5447-4961-b84f-6c6c4170472f?dist_type=deb&platform=x64&driver_type=prebuilt'
+apt-get update && apt-get install dkms perl make gcc libelf-dev linux-headers-$(uname -r) linux-headers-generic
+curl -k -o hlragent.deb 'https://127.0.0.1/linux_agent/97877fd6-dad9-45dd-815e-a7e917d0280c/83023bec-5447-4961-b84f-6c6c4170472f?dist_type=deb&platform=x64&driver_type=dkms'
+#curl -k -o hlragent.deb 'https://127.0.0.1/linux_agent/97877fd6-dad9-45dd-815e-a7e917d0280c/83023bec-5447-4961-b84f-6c6c4170472f?dist_type=deb&platform=x64&driver_type=prebuilt'
